@@ -8,7 +8,7 @@ from commands.gif_commands    import GifCommands
 from commands.util import find_url, download_img, combine_params, execute_command
 
 if __name__ == "__main__":
-    KEY     = "NzcwNzM3OTc0NTE3ODI1NTY4.X5h7rA.eZdDxVhKjvCGFwKi1ZejW97YFrA"
+    KEY     = "MY TOKEN"
     ask_responses = [
         "It is certain", "Without a doubt", "You may rely on it", "Yes definitely", "It is decidedly so",
          "As I see it, yes", "Most likely", "Yes", "Obviously", "That question was so stupid I'm not even responding",
