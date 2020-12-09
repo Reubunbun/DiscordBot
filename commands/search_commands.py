@@ -25,7 +25,7 @@ class SearchCommands(commands.Cog):
     async def search_online(self, ctx, query, type="image", send=True):
         query = query.replace("; ", " AND ")
         query = query.replace(';', " AND ")
-        HEADERS = { "Authorization" : "Client-ID e0cfd3fd6991cfe" }
+        HEADERS = { "Authorization" : "Client-ID TOKEN" }
         max_page = 100
         searching_max_page = True
         while searching_max_page: #Try the find the amount of pages of results
@@ -143,7 +143,7 @@ class SearchCommands(commands.Cog):
 
     @commands.command()
     async def givethumbnail(self, context, yt_id: str="UCmLiSrat4HW2k07ahKEJo4w", send=True):
-        KEY = "AIzaSyBiKp01prcz60RLDGE5Nrr4omS7ReosWD4"
+        KEY = "TOKEN"
         channel_url = f"https://www.googleapis.com/youtube/v3/channels?key={KEY}&id={yt_id}&part=contentDetails"
         async with aiohttp.ClientSession() as session:
             async with session.get(channel_url) as response:
